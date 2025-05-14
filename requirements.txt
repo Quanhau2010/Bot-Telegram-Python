@@ -1,0 +1,9 @@
+requests 
+pytz 
+Faker 
+gTTS 
+pyTelegramBotAPI 
+imgurpython 
+yt-dlp 
+psutil 
+pycountry
