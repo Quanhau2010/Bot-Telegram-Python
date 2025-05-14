@@ -24,6 +24,11 @@ from io import BytesIO
 import yt_dlp
 import telebot
 import pycountry
+import os
+from flask import Flask
+
+app = Flask(__name__)
+
 os.system("cls" if os.name == "nt" else "clear")
 ADMIN_ID = [6107281736]
 
@@ -1746,3 +1751,11 @@ while True:
     except Exception as e:
         print(f"Lỗi đã xảy ra: {e}")
         time.sleep(5)  # Đợi 5 giây trước khi khởi động lại bot
+
+@app.route("/")
+def home():
+    return "Bot is running!"
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))  # lấy PORT từ Render
+    app.run(host="0.0.0.0", port=port)
