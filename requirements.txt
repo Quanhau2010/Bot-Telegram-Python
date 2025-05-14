@@ -1,5 +1,3 @@
-
---upgrade pip
 requests 
 pytz 
 Faker 
@@ -9,4 +7,3 @@ imgurpython
 yt-dlp 
 psutil 
 pycountry
---upgrade pip
