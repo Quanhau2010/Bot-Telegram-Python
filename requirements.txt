@@ -7,3 +7,4 @@ imgurpython
 yt-dlp 
 psutil 
 pycountry
+flask
