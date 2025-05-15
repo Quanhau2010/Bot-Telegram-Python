@@ -44,7 +44,7 @@ def mtt_sendreaction(bot_token, chat_id, message_id, emoji, is_big):
         requests.post(url, json=payload)
         
     
-bot = telebot.TeleBot('7909176231:AAHOO_lUfdJ_BFUQf_db7UcN2qDrwAhNKQw', parse_mode='HTML')
+bot = telebot.TeleBot('7909176231:AAGrAbRCLp6hD6N1ByJZzdi-Y2o0gjq9eGw', parse_mode='HTML')
 
 # Ghi nhận thời gian bắt đầu bot
 start_time = time.time()
